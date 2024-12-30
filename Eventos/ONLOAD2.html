@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+</head>
+<body>
+
+    <h1>Esse exemplo é o mesmo que do <mark>ONLOAD1</mark>, aqui vamos usar o ADDEventlistener</h1>
+
+    <iframe id="hh" src="https://ead.unimar.br/" frameborder="4"></iframe>
+    
+    <p id="demo"></p>
+
+    <script>
+
+        document.getElementById("hh").addEventListener("load",myFunction);
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "o Onload foi ativado"
+        }
+
+        
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

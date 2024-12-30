@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo1</title>
+</head>
+<body>
+
+    <h1>Exemplo 1</h1>
+
+    <h2>O evento ONLOAD</h2>
+
+    <p>Atribua um evento "onload" a um elemento iframe</p>
+
+    <iframe onload="ex2()" src="https://ead.unimar.br/" frameborder="10" width="600px" height="800px"></iframe>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function ex2(){
+            let x = document.getElementById("demo");
+            let y = document.getElementsByTagName("h1")[0];
+            let z = document.getElementsByTagName("h2")[0];
+            x.innerHTML = "Iframe está carregado";
+            y.style.color = "red";
+            z.style.fontSize = "3rem"
+        }
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

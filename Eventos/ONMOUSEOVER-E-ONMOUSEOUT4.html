@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4 </title>
+</head>
+<body>
+
+    <h1>OMOUSEOVER E ONMOUSEOUT</h1>
+
+    <button type="button" id="btn">click</button>
+
+
+    <script>
+
+        // Primerio passo : rastrear o(s) elementos(s) HTML.
+
+        let botao = document.getElementById("btn");
+
+        // Segundo passo : adicionar evento ao elemento rastreado. Para isso, usaremos uma função.
+
+        // função
+        // function nomeDaFuncao(){
+        //     inseraSSeuCodigoAqui
+        // }
+
+        // Arrow Function (funcao de flecha)
+        // () => {
+        //     insiraSeuCodigoAqui
+        // }
+
+        // O código fica assim : Elemento.addEventLsitneer("tipo de evento", função)
+        
+        botao.addEventListener("mouseover", () => {
+            botao.innerHTML = "mudou de novo"
+            botao.style = "color:green"
+        })
+        botao.addEventListener("mouseout", () => {
+            botao.innerHTML = "click"
+            botao.style = "color:black"
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>

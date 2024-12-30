@@ -1,0 +1,70 @@
+<!-- 
+
+ONMOUSEDOWN =
+    O onmouse downevento ocorre quando um usuário pressiona o botão do mouse sobre um elemento HTML .
+
+ONMOUSEENTER=
+    O onmouse enterevento ocorre quando o ponteiro do mouse entra em um elemento .
+    O onmouse enterevento é frequentemente usado junto com o onmouseleaveevento, que ocorre quando o ponteiro do mouse sai de um elemento.
+    O onmouse enterevento é semelhante ao onmouseover evento. A diferença é que o onmouseenterevento não borbulha (não se propaga na hierarquia do documento).
+
+ONMOUSELEAVE = 
+    O onmouse leave evento ocorre quando o ponteiro do mouse sai de um elemento .
+    O onmouse leave evento é frequentemente usado junto com o onmouseenter evento, que ocorre quando o ponteiro do mouse entra em um elemento.
+    O onmousel eave evento é semelhante ao onmouseout evento. A diferença é que o onmouseleaveevento não borbulha (não se propaga na hierarquia do documento).
+
+ONMOUSEMOVE = 
+    O onmousemove evento ocorre quando o ponteiro se move sobre um elemento .
+
+ONMOUSEOVER = 
+    O onmouseover evento ocorre quando o ponteiro do mouse entra em um elemento .
+    O onmouseover evento é frequentemente usado junto com o onmouseoutevento, que ocorre quando o ponteiro do mouse sai do elemento.
+    O onmouseover evento é semelhante ao evento.
+
+ONMOUSEOUT  =
+    O onmouseout evento ocorre quando o ponteiro do mouse sai de um elemento .
+    O onmouseout evento é frequentemente usado junto com o onmouseoverevento, que ocorre quando o ponteiro é movido sobre um elemento.
+    O onmouseout evento é semelhante ao onmouseleave evento.
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+
+    <button class="btn1">gooooo</button>
+    <button class="btn2">vaiiii</button>
+    
+    <script>
+
+ 
+
+        document.addEventListener("DOMContentLoaded", function(){
+
+            let btn1 = document.getElementsByClassName("btn1")[0]
+
+            btn1.addEventListener("mouseover", function(){
+                this.style.color = "red";
+            });
+
+            btn1.addEventListener("mouseout", function(){
+                this.style.color = "green";
+            });
+
+            btn1.addEventListener("mousemove", function(){
+                this.style.color = "blue";
+                console.log();
+            });
+
+        })
+    
+
+    </script>
+    
+ </body>
+ </html>

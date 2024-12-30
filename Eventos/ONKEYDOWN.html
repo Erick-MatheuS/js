@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONKAYDOWN</title>
+
+    <style>
+        #dv1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: #f00;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+    </style>
+
+    <script>
+
+        // Exemplo 1
+
+            // function digite(){
+
+            //     document.querySelector("#demo").innerHTML = "Você está usando o OnKeyDown"
+
+            // }
+
+        // Exemplo 2
+
+            // function ex2(cores){
+
+            //     cores.style.color = "red"
+
+            // }
+
+        // Exemplo 3  
+
+        // function oi(){
+        //     document.getElementById("outro").onkeydown = function(){
+        //         novafun();
+        //     }
+
+        //     function novafun(){
+        //         document.getElementById("outro").style.backgroundColor = "blue";
+        //     }
+        // }
+    
+        // Exemplo 4
+
+            // window.onload = function(){
+
+            //     let valor = document.getElementById("ex4");
+            //     valor.addEventListener("keydown", maisum);
+
+            //     function maisum() {
+            //         document.getElementById("ex4").style.backgroundColor = "red";
+            //     }
+
+            // }
+
+        // Exemplo 5
+
+        // window.onload = function(){
+
+        //     let penultimo = document.getElementById("penu");
+
+        //     penultimo.addEventListener("keydown", down);
+        //     penultimo.addEventListener("keyup", up);
+
+        //     function down(){
+        //         document.querySelector("#penu").style.backgroundColor = "red";
+        //     }
+
+        //     function up(){
+        //         document.querySelector("#penu").style.backgroundColor = "grey";
+        //     }
+
+        // }
+
+        
+        // Exemplo 6
+
+
+        // 37=Esquerda / 38=Cima / 39=Direita / 40=Baixo
+
+        // var px = 0;
+        // var py = 0
+
+        // document.addEventListener("keydown", function(event){
+        //     var obj = document.getElementById("dv1");
+        //     var tecla=event.keyCode;
+        //     if(tecla == 37){
+        //         px -= 30;
+        //         obj.style.left = px+ "px";
+        //     }else if(tecla == 38){
+        //         py -= 30;
+        //         obj.style.top = py+ "px";
+        //     }else if(tecla == 39){
+        //         px += 30;
+        //         obj.style.left = px+ "px";
+        //     }else if(tecla == 40){
+        //         py +=30;
+        //         obj.style.top = py+ "px";
+        //     }
+        // });
+        
+        
+                // Outra maneira de fazer(mais facil)
+
+        // let px = 0;
+        // let py = 0;
+
+        // function mover(event){
+        //     let obj = document.getElementById("dv1");
+        //     let teclado = event.keyCode;
+
+        //     if(teclado == 37){
+        //         px -= 50;
+        //         obj.style.left=px + "px";
+        //     }else if(teclado == 38){
+        //         py -= 50;
+        //         obj.style.top=py + "px";
+        //     }else if(teclado == 39){
+        //         px +=50;
+        //         obj.style.left=px + "px";
+        //     }else if(teclado == 40){
+        //         py +=50;
+        //         obj.style.top=py + "px";
+        //     }
+        // }
+
+        // document.addEventListener("keydown", mover);
+
+        // let px = 0;
+        // let py = 0;
+
+        // function key(event){
+        //     let mover = document.getElementById("dv1");
+        //     let tecla = event.keyCode;
+
+        //     if(tecla == 37){
+        //         px -= 40;
+        //         mover.style.left=px + "px"
+        //     }else if(tecla == 38){
+        //         py -= 40;
+        //         mover.style.top=py + "px";
+        //     }else if(tecla == 39){
+        //         px += 40;
+        //         mover.style.left=px + "px";
+        //     }else if(tecla == 40){
+        //         py += 40;
+        //         mover.style.top=py + "px";
+        //     }else if(tecla == 32){
+        //         alert("O keyDown foi desativado, porquê você apertou o botão ESPAÇO");
+        //         document.removeEventListener("keydown", key)
+        //     }
+        // }
+
+        // this.addEventListener("keydown", key);
+        
+        
+    </script>
+    
+
+</head>
+<body >
+
+
+
+    <!-- Exemplo 1 -->
+
+    <!-- Exemplo 2 -->
+
+        <!-- <h1>Exemplo 2</h1>;
+
+        <input type="text" onkeydown="ex2(this)"> -->
+
+    <!-- Exemplo 3 -->
+
+        <!-- <h1>Exemplo 3</h1>
+
+        <h3>Outra maneira de fazer o exemplo  de sima</h3>
+
+        <input type="text" id="outro"> -->
+
+    <!-- Exemplo 4 -->
+
+        <!-- <h1>Exemplo 4</h1>
+
+        <h3>Maneira com addEvent</h3>
+
+        <input type="text" id="ex4"> -->
+
+    <!-- exemplo 5 -->
+
+        <!-- <h1>Exemplo 5</h1>
+
+        <h3>Esse é exemplo é legalzinho</h3>
+
+        <input type="text" name="penu" id="penu" > -->
+
+    <!-- Exemplo 6 -->
+
+        
+
+    <br><br><br>
+    <br>
+
+    <!-- Exemplo  -->
+
+    <!-- <div id="dv1"></div> -->
+    
+</body>
+</html>

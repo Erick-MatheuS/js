@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONCHANGE</title>
+
+    <script>
+
+
+        // Descrição
+
+
+        // O onchange evento ocorre quando o valor de um elemento HTML é alterado .
+
+        // Dica: Este evento é semelhante ao evento oninput . A diferença é que o evento oninput ocorre
+        // imediatamente após a alteração do valor de um elemento, enquanto onchange ocorre quando o elemento
+        // perde o foco, após a alteração do conteúdo. A outra diferença é que o evento onchange também funciona
+        // em elementos <select>.
+
+
+        // ex1
+
+        //  function onchangeh1(){
+
+        //     let h1 = document.getElementsByTagName("h1")[0];
+        //     console.log("oi");
+
+        //  }
+
+        // ex2
+
+            // function teste(){
+            //     let input = document.getElementById("texto")
+            //     let ee = document.getElementsByTagName("h1")[0]
+            //     ee.innerHTML = input.value;
+            // }
+
+        // ex3 / maneira simples
+
+            // function changeH1(i){
+            //     let h1 = document.getElementsByTagName("h1")[0]
+            //     h1.innerHTML = i.value;
+            // }
+
+
+        // ex4
+
+        // function sec(erick){
+        //     alert(erick)
+        // }
+
+
+        // ex5
+            
+        
+        // function myFunction(){
+        //    let h = document.getElementById("mySelect").value;
+        //    document.getElementById("demoo").innerHTML = "Você selecionou : " + h;
+        // }
+
+        // ex6
+
+
+        // function myFunction(){
+        //     var x = document.getElementById("fname");
+        //     x.value = x.value.toUpperCase();
+        // }
+
+
+        // ex7
+
+        // function myFunction(valor){
+        //     alert("O novo valor foi alterado para : " + valor);
+        // }
+
+         
+
+
+    </script>
+
+</head>
+<body>
+
+
+    
+
+    <!-- <h1>MOdifica o texto no campo de entrada e clique fora do campo para disparar o vento onchange.</h1>
+
+    Digite algum texto : <input type="text" value="Hello" onchange="myFunction(this.value)"> -->
+
+ 
+    <!-- ex1 -->
+        
+            <!-- <h1>Clique em mim</h1>
+
+            <input type="text" onchange="onchangeh1()"> -->
+
+
+    <!-- ex2 -->
+
+            <!-- <h1>Clique em mim</h1>
+
+            <input id="texto" type="text" onchange="teste(this)">  -->
+
+
+    <!-- ex3 -->
+
+            <!-- <h1>clique em mim</h1>
+
+            <input type="text" onchange="changeH1(this)"> -->
+
+    <!-- ex4 -->
+
+    <!-- <select onchange="sec(this.value)">
+
+        <option value="Sua escolha foi o Javascript">JAVASCRIPT</option>
+        <option value="Sua escolha foi o HTML">HTML</option>
+        <option value="Sua escolha foi o CSS">CSS</option>
+        <option value="Sua escolha foi o PYHON">PYTHON</option>
+        <option value="Sua escolha foi o CSS">CSS</option>
+        <option value="Sua escolha foi o GIT">GIT</option>
+
+    </select> -->
+
+
+    <!-- ex5 -->
+<!-- 
+    <h1>Selecione um carro da nossa lista:</h1>
+
+    <select id="mySelect" onchange="myFunction()">
+
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="MERCEDES">MERCEDES</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+
+    <p>Quando você seleciona um carro novo, uma função é acionada que gera o valor do carro selecionado.</p> -->
+
+    <!-- <p id="demoo"></p>  -->
+
+
+    <!-- ex6 -->
+
+    <!-- <h1>Esse exemplo usa o método addEventListener() para anexar um evento "change" a um elemento de entrada.</h1>
+
+    DIgite seu nome : <input type="text" id="fname" onchange="myFunction()">
+
+    <p>Ao sair do campo de entrada, é adicionada uma função que transforma o texto de entrada em maiúsculas.</p> 
+ -->
+
+
+    <!-- ex7 -->
+
+    <!-- <h1>MOdifica o texto no campo de entrada e clique fora do campo para disparar o vento onchange.</h1>
+
+    Digite algum texto : <input type="text" value="Hello" onchange="myFunction(this.value)">
+ -->
+
+
+ 
+</body>
+</html>
