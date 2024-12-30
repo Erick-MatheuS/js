@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+                
+    <style>
+
+        *{      
+            background-color: #bdb6b6;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+            body{
+                max-width: 90vw;
+                margin: auto;
+                background-color: white;
+                padding: 30px;
+            }
+
+        #add{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: #D94A38;
+            position: absolute;
+            left: 100px;
+        }
+
+
+    </style>
+
+    <!-- <script src="eventos.js"></script>
+
+     <script>
+            function h1click(){
+                console.log("Executar a função")
+            } 
+    </script> 
+
+    <script>
+        function change(aa){
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.innerText = aa.value
+        } -->
+
+
+  <!-------------------------------------------------------------------------->
+
+ <!-- ex fora do curso -->
+
+
+     </script>
+
+     <script>
+     
+
+        
+
+     </script>
+
+</head>
+<body>
+
+    <!-- <h1 onclick="this.style.color = 'red'">Clique em mim</h1>
+
+    <input type="text" onchange="change(this)">
+
+    <h1 onclick="h1click()">Clique em mim</h1>
+    <h1 onclick="console.log('H1 foi clicado')">Clique em mim</h1> -->
+
+
+<!------------------------------------------------------------------------------->
+    
+
+    <h1>O que são eventos?</h1>
+
+    <ul>
+        <li>Por meio de JavaScript Podemos mapear algumas ações dos Usuários, que chamamos de eventos;</li>
+        <li>Como: movimento do mouse, click, mouse entrando ou saindo de um elemento, carregando da página e etc;</li>
+        <li>E então criar comportamento interessante como: animações de menu abrindo e fechando;</li>
+    </ul>
+
+    <p>Eventos são procedimentos executados em consequência a uma ação. Por exemplo, quando o usuário clica em um botão, é disparado um evento deste elemento chamado “click”. Quando se pressiona uma tecla sobre outro elemento, é disparado um evento chamado “keydown” e quando a tecla é solta, o evento “keyup” é disparado. <br><br>
+
+        Várias ações, não só na interface gráfica, fazem com que eventos sejam disparados. Então, sabendo que algo é feito quando certas ações são executadas, pode ser interessante e necessário ter controle sobre esta situação. Nesse ponto entra o TRATAMENTO DE EVENTOS, que consiste em definir o que será feito quando um determinado evento for disparado. <br><br>
+        
+        Algumas linguagens que possuem ambientes de desenvolvimento RAD (Rapid Application Development) permitem acessar esses eventos de forma bastante prática, através da interface gráfica do IDE. Porém, às vezes é preciso controlar esses eventos apenas pelo código, sem auxílio de ambiente gráfico, o que é muito comum para a linguagem Javascript. Por isso é importante conhecer a sintaxe da linguagem para esse tipo de ação. <br><br>
+        
+        O tratamento de eventos geralmente é feito a partir de funções nas quais se implementa o código que deve ser executado quando o evento ocorrer. Essas funções são chamadas de “event handlers” (tratadores de evento).
+        
+        A seguir veremos como efetuar o tratamento de eventos de elementos como botões e inputs HTML a partir de um script Javascript, garantindo uma maior interação com o usuário.
+        </p>
+
+        <h4>Tratando eventos diretamente nas propriedades
+        </h4>
+
+        <p>A linguagem Javascript permite que o código a ser executado em um evento seja informado diretamente na
+        propriedade que lhe dá acesso. Essa forma é utilizada quando se tem poucas instruções a serem executadas
+        e quando as expressões são curtas e de fácil compreensão. <br><br><br> Na listagem a seguir adicionamos um código à
+        propriedade onclick de um botão para que seja exibida uma mensagem quando o usuário clicar sobre ele.</p>]
+        
+        <img src="./img/pp.png" alt="print" width="1200vw"><br>
+    <br><hr>
+
+    <h2>Evento Onload</h2>
+
+
+    <p>Em JavaScript, esse evento pode ser aplicado para iniciar uma função específica quando a página é totalmente exibida. Também pode ser usado para verificar o tipo e a versão do navegador do visitante. Podemos verificar quais cookies uma página usa usando o atributo onload .</p>
+
+     <p>   Em HTML, o atributo onload é acionado quando um objeto é carregado. A finalidade desse atributo é executar um script quando o elemento associado é carregado.</p>
+        
+      <p>  Em HTML , o atributo onload é geralmente usado com o elemento <body> para executar um script assim que o conteúdo (incluindo arquivos CSS, imagens, scripts, etc.) da página da Web estiver completamente carregado. Não é necessário utilizá-lo apenas com a tag  , pois pode ser utilizado com outros elementos HTML.</p>
+        
+       <p> A diferença entre document.onload e window.onload é: document.onload dispara antes do carregamento de imagens e outros conteúdos externos. Ele é acionado antes do window.onload . Enquanto o window.onload dispara quando a página inteira carrega, incluindo arquivos CSS , arquivos de script, imagens, etc.</p>
+
+    <ul>
+        <li>O Onload é ativado ao carregar a página;</li>
+        <li>Podemos depois desse evento realizar algumas ação no nosso projeto</li>
+        <li>Vamos ver na prática!</li>
+    </ul>
+
+    window.onload = function(){
+
+        console.log("Carregou o DOM");
+    }
+        console.log("Carregou o JS");
+
+    <hr>
+
+    <h2>Evento onClick</h2>
+
+    <ul>
+        <li>O click é ativado quando o usuário clica em um elemento que atrelamos o evento;</li>
+        <li>Após a ação podemos fazer as modificações a alterações no HTML/CSS que quisermos.</li>
+        <li>Vamos ver na prática!</li>
+    </ul>
+
+
+    <h3 >Meu botão</h3>
+
+    <div>
+        <button onclick="alert('Atenção vurus no seu computador')">Clique em mim</button>
+    </div>
+
+    <h5 onclick="innerHTML='ERICK MATHEUS'">Onclick</h5>
+
+    <p>Use the addEventListener() method to attach a "click" event to a p element:</p>
+
+    <p id="go">Click me.</p>
+
+
+
+    <hr>
+
+    <h2>Eventos onmouseover e onmouseout</h2>
+
+    <p>Os eventos onmouseovere onmouseoutpodem ser usados para acionar uma função quando o
+    usuário passa o mouse sobre ou fora de um elemento HTML:</p>
+
+    <ul>
+        <li>O mouseover é ativado quando o ponteiro do mouse passa em cima do elemento que criamos o evento.</li>
+        <li>Temos também o evento mouseout que é quando o ponteiro sai do elemento</li>
+        <li>Vamos ver na prática!</li>
+    </ul>
+
+    <div onmouseover="entra(this)" onmouseout="sai(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">passar em cima</div>
+
+    <hr><br>
+    <h2>Evento OnBlur e OnFocus</h2>
+
+    <p>onBlur: o evento onBlur ocorre quando um objeto perde o foco. ex: você tem 2 campos de textos para digitar
+    seus dados. O primeiro você deve digitar seu nome e no outro o seu email. Após digitar o seu nome você terá que
+    digitar o email, certo? Se você tivesse colocado um evento onBlur no campo onde digitou o nome, ao clicar no
+    campo de email uma ação seria disparada.</p>
+
+    <p>onFocus: este evento ocorre quando o objeto recebe o foco. ex: quando você clica
+     em um campo para digitar algo.</p>
+
+     ex1
+
+    <input type="text" placeholder="Informe um texto" id="valor" onblur="minhaFuncao()">
+
+    <div id="resultado"></div>
+
+
+
+    <input value="digite aqui" type="text"
+    onblur="if(this.value == '') {this.value = 'digite aqui';}" 
+    onfocus="if(this.value == 'digite aqui') {this.value = '';}" />
+
+    <!-- ex2 -->
+
+    <p>1º. Ao carregar a página, este campo receberá o texto “digite aqui”. O atributo value
+    é utilizado quando queremos definir um valor inicial para o campo.</p>
+    <p>2º. Os eventos onBlur e onFocus estão recebendo instruções de condição (if). O “if” é o “se” da nossa
+    língua ex: se valor for igual a 0 (zero) então faça isto. No nosso código, eu quero dizer o seguinte:
+    quando o objeto perder o foco é disparado o evento onBlur e este evento vai checar se o atributo “value”
+    ESTÁ EM BRANCO. Se estiver, o atributo “value” RECEBE O TEXTO. No evento onFocus é feito um check
+    se o atributo value possui o texto “digite aqui”. Se possuir, o atributo “value” FICA EM BRANCO.</p>
+    <p>3º. Finalizando, para que serve o this?
+    O “this” serve para fazer referência ao próprio objeto.</p>
+
+    <h2>Event onChange</h2>
+
+    <p>O onchangeevento ocorre quando o valor de um elemento HTML é alterado .</p>
+    <p> <strong>Dica:</strong>  Este evento é semelhante ao evento oninput . A diferença é que o evento oninput ocorre
+    imediatamente após a alteração do valor de um elemento, enquanto onchange ocorre quando o elemento
+    perde o foco, apósa alteração do conteúdo. A outra diferença é que o evento onchange também funciona
+    em elementos SELECT.</p>
+
+    <!-- ex1 -->
+
+    <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)">
+
+    <p>Ao clicar fora do input text po texto escrito nele ficará todo em caixa Alta.</p>
+
+    Insira seu Nome: <input type="text" id="fname" onchange="myFunction()"><p>
+
+    <h2>addEventsListener</h2>
+
+    <div id="add"></div>
+
+
+<br><br><br><br><br><br>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento3/3</title>
+
+    <script>
+
+        function loader(){
+
+        let t = document.getElementById("Título")
+
+        t.onclick = mudarText;
+        }
+
+        function mudarText(){
+            this.innerHTML = "Novo texto ";
+        }
+
+    </script>
+
+    </head>
+
+
+<body onload="loader()">
+    
+    <h1 id= "Título">teste</h1>
+
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos- Part 3</title>
+
+    <script>
+
+        // Exemplo de numero 1
+
+        // ex1
+
+                // Aqui estamos usando um ONCLICK dentro de uma função de ONLOAD.
+
+                // function loaded(){
+
+                //     let i = document.getElementById("titulo");
+                //     i.onclick = mudarText;
+
+                // }
+
+                // function mudarText(){
+                //     this.innerHTML= "mudado";
+                // }
+
+
+        // ex2
+
+                // function loaded(){
+                //     let ex2 = document.getElementById("titulo");
+                //     // ex2.onclick = menina;
+
+                //     ex2.addEventListener("click", menina)
+                // }
+
+                // function menina(){
+                //     this.innerHTML = "Olá"
+                // }
+
+    // Evento onMouseOver
+
+                //  function loaded(){
+                    // let ex2 = document.getElementById("titulo");
+
+                    // ex2.onclick = menina;
+
+                    // ex2.addEventListener("mouseover", mouseover)
+                    // ex2.addEventListener("mouseout", mouseout)
+
+                // }
+
+                // function mouseover(){
+                //     this.innerHTML = "Mouse dentro"
+                // }
+
+                // function  mouseout(){
+                //     this.innerHTML = "Mouse fora"
+                // }
+
+                // document.addEventListener("click", clicked);
+                // document.addEventListener("mouseenter" , mouseenter);
+                // document.addEventListener("mouseover", mouseover);
+
+                // function clicked(){
+                //     document.getElementById("titulo").innerHTML = "Fui clicado";
+                // }
+
+                // function mouseenter(){
+                //     document.getElementById("titulo").innerHTML = "entrei como o mouse";
+                // }
+
+                // function mouseover(){
+                //     document.getElementById("titulo").innerHTML = "Sai com o mouse";
+                // }
+
+                // function loaded(){
+                //     document.getElementById("titulo").innerHTML = "carregou o loaded";
+                // }
+
+
+    // Outro exemplo que fiz
+
+
+                // function loaded(){
+                //     let abc = document.getElementById("titulo");
+                //     abc.innerHTML = "Mudei por causa do mouseloaded"
+
+                //     abc.addEventListener("click", function(){
+                //         abc.innerHTML = "Fui clicado";
+                //     })
+
+                //     abc.addEventListener("mouseleave", ()=>{
+                //         abc.innerHTML = "Sai com o mouse";
+                //     })
+
+                //     abc.addEventListener("mouseenter", ()=>{
+                //         abc.innerHTML = "Entrei com o mouse";
+                //     })
+
+                //     abc.addEventListener("dblclick" , ()=>{
+                //         abc.innerHTML = "Dlclick"
+                //     })
+
+                // }
+
+    // Outro exemplo perfeito
+
+                // function loaded(){
+                //     let DeusEamor = document.getElementById("titulo");
+                //     DeusEamor.ondblclick = dblclick;
+                //     DeusEamor.onclick = onclick;
+                //     DeusEamor.onmouseenter = mouseenter;
+                //     DeusEamor.onmouseleave = mouseleave;
+                // }
+
+                // function dblclick(){
+                //     this.innerHTML = "Dei um dblClick";
+                // } 
+
+                // function onclick(){
+                //     this.innerHTML = "O click foi clicado";
+                // }
+
+                // function mouseenter(){
+                //     this.innerHTML = "O mouse entrer entrouem funcionalidade";
+                // }
+
+                // function mouseleave(){
+                //     this.innerHTML = "O mouse leave foi iniciado";
+                // 
+
+        // function loaded(){
+
+        //     let t = document.getElementById("titulo");
+        //     t.onmouseover = function vamos(){
+        //         this.style.color = "red";
+        //     }
+        //     t.onmouseout = function vamosBR(){
+        //         this.style.color = "blue";
+        //     }
+
+        // }
+
+        /////////////////////////////////////////////////////////////
+
+        // function loaded(){
+
+        //     let t = document.getElementById("titulo");
+        //     t.onmouseover = mudar;
+        //     t.onmouseout = mudarBR;
+
+        // }
+
+        // function mudar(){
+        //     this.style.color = "red"
+        // }
+
+        // function mudarBR(){
+        //     this.style.color = "blue"
+        // }
+
+        ///////////////////////////////////////////////////////////////////
+
+        // function loaded(){
+
+        //     let o = document.getElementById("titulo");
+
+        //     o.addEventListener("mouseover", function abc(){
+        //         o.innerHTML = "passei em cima";
+        //     })
+
+        //     o.addEventListener("mouseout", function abcde(){
+        //         o.innerHTML = "Voltou de novo"
+        //     })
+
+        // }
+
+
+
+    </script>
+
+
+</head>
+<body onload="loaded()">
+
+    <h1 id="titulo">Teste</h1>
+
+    
+</body>
+</html>

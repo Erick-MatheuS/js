@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <style>
+        #dv1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+
+
+    </style>
+
+
+    <script>
+
+        // ex1
+        // function mudaCor(obj, cor){
+        //     obj.style.backgroundColor=cor;
+
+        // }
+
+        // function mudaPos(obj){
+        //     obj.style.position="absolute";
+        //     obj.style.left=Math.random()*690+"px";
+        //     obj.style.top=Math.random()*690+"px";
+        // }
+
+        // function ola(){
+        //     let data = new Date();
+        //     let hora = data.getHours();
+        //     let txt = "";
+        //     if(hora < 12 ){
+        //         txt="Bom dia";
+        //     }else if(hora < 18 ){
+        //         txt = "Boa tarde";
+        //     }else{
+        //         txt = "Boa noite"
+        //     }
+        //     alert("Olá ", + txt)
+        // }
+
+    </script>
+
+
+</head>
+<body onload="ola()">
+
+    <!-- O que são eventos? -->
+
+        <!-- Por meio de JavaScript podemos mapear algumas ações dos usuários, que chamamos de eventos;
+        Como: movimento do mouse, click, mouse entrando ou saindo de um elemento, carregamento da página e etc;
+        E então criar comportamentos interessante como : animação de menu abrindo e fechando; -->
+
+
+    <!-- Evento Onload -->
+
+             <!-- O onload é ativado ao carregar a página -->
+             <!-- Podemos depois desse evento realizar algumas ações em nosso projeto -->
+
+
+
+             <!-- ex1 -->
+             <div id="dv1" onmouseover="mudaCor(this, '#f00')" onmouseout="mudaCor(this, '#fff')"></div>
+             <button onclick="alert('erick')" onmouseover="mudaCor(document.getElementById('dv1'), '#00f')">Clique em mim</button>
+             <button onclick="alert('Você conseguiu apertar, Parabéns')" onmouseover=" mudaPos(this)">Clique em mim</button>
+    
+            <div id="muda" ></div>
+
+
+</body>
+</html> 

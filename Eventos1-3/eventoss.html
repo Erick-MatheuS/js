@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Parte 1/3 (DOM Events)</title>
+
+
+    <script>
+
+        // function clickh1(){
+        //     console.log("executando a função")
+        // }
+
+        
+
+        // function changeH1(input){
+
+        //     let h1 = document.getElementsByTagName("h1")[0]
+        //     h1.innerHTML = input.value;
+
+        // }
+
+        function hidenh1(){
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.style.display = "none";
+            
+        }
+    
+        
+
+    </script>
+
+
+        <style>
+
+            div{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #1471fc;
+                display: inline-block;
+                padding: 20px;
+                color: white;
+                font-size: 2em;
+            }
+
+        </style>
+
+</head>
+<body>
+
+    <!-- <h1 onclick="console.log('h1 foi clicado')">Clique me mim</h1> -->
+
+    <!-- <h1 onclick="clickh1()">Clique em mim</h1> -->
+
+    <!-- <h1 onclick="console.log(this)">Clique em mim</h1> -->
+
+    <h1 onclick='this.style.color="red"'>Clique em mim</h1>
+
+    <h1 id="oi">Clique em mim</h1>
+
+    <input type="text" onchange="changeH1(this)">
+
+    <input type="text" oninput="changeH1(this)">
+
+    <div onclick="hidenh1()">Click</div>
+
+    <!-- <input type="text" id="" onchange="mudar(this)"> -->
+
+
+    
+</body>
+</html>

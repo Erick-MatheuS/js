@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de Eventos</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            font-size: 1.1rem;
+        }
+    </style>
+
+
+    <script>
+
+                                            //  Onclick 
+
+//  ex3 = usando uma função
+
+        function displayDate(){
+            document.getElementById('teste').innerHTML = Date();
+        }
+// ex4
+
+        function carConteudo(){
+            document.getElementById("sono").innerHTML="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum </p><p> sint non expedita eveniet in quisquam dolores esteum sed doloremque laboriosam provident autem, similique, eaque neque, hic nemo beatae corporis!</p>"
+        }
+
+        function carImagem(){
+            document.getElementById("carrinho").innerHTML= "<img src='./img/images.jpg' alt='carro' width='250px'> "
+        }
+
+// ex5
+
+        window.onload=function(){
+            let botãoAlerta = document.getElementById("alerta");
+
+            botãoAlerta.onclick = function(){
+                mostraAlerta();
+            };
+        }
+
+        function mostraAlerta(){
+            alert("Você clicou no botão");
+        }
+
+
+
+// ex6
+
+
+
+      
+
+        window.onload=function(){
+            let botaoSomar = document.getElementById("somar");
+
+            botaoSomar.onclick = function () {
+                somarValores(10,5) ;
+            };
+        }
+
+        function somarValores(valor1, valor2){
+            let soma = valor1 + valor2;
+            alert(soma);
+        }
+
+// ex7
+
+        // function loadPage(){
+        //     alert("Olá")
+        // }
+
+// ex8
+// Essas linhas de codigos não esta funcionado , concertar futuramente.
+
+// document.getElementById("troca").onmouseover = function() {mouseOver()};
+// document.getElementById("troca").onmouseout = function() {mouseOut()};
+
+// function mouseOver() {
+//   document.getElementById("troca").style.color = 'red';
+// }
+
+// function mouseOut() {1
+//   document.getElementById("troca").style.color = 'blue';
+// }
+
+</script>
+
+
+</head>
+
+<body onload="loadPage()" >
+
+    
+
+    <!-- 
+    Eventos HTML são "coisas" que acontecem com elementos HTML.
+    Quando o JavaScript é usado em páginas HTML, o JavaScript pode "reagir" a esses eventos.
+    Um evento HTML pode ser algo que o navegador faz ou algo que um usuário faz.
+
+    Aqui estão alguns exemplos de eventos HTML:
+
+    Uma página da web HTML terminou de carregar
+    Um campo de entrada HTML foi alterado
+    Um botão HTML foi clicado
+
+    Evento	Descrição:
+
+        onchange	    Um elemento HTML foi alterado
+        onclick  	    O usuário clica em um elemento HTML
+        onmouseover 	O usuário move o mouse sobre um elemento HTML
+        onmouseout	    O usuário move o mouse para longe de um elemento HTML
+        onkeydown	    O usuário pressiona uma tecla do teclado
+        onload	        O navegador terminou de carregar a página / Executa um JavaScript imediatamente
+                        após o carregamento de uma página.
+        
+    -->
+
+
+                                        <!-- EVENTO ONCLICK -->
+
+    <!-- ex1 Onclick -->
+            <!-- <h2>Exemplo 1 de Onlick</h2>
+            <button  onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button> -->
+
+            <p id="demo"></p>
+
+    <!-- ex2 onclick -->
+    <!-- No próximo exemplo, o código altera o conteúdo de seu próprio elemento (usando this.innerHTML): -->
+
+            <button onclick="this.innerHTML=Date()">Que horas são?</button><br><br>
+
+    <!-- ex3 -->
+    <!-- O código JavaScript geralmente tem várias linhas. É mais comum ver atributos de eventos chamando funções: -->
+
+            <button onclick="displayDate()">Clique para saber o horário</button>
+
+            <p id="teste"></p>
+
+    <!-- ex4 -->
+
+            <button onclick="carConteudo()">Click</button>
+
+            <span id="sono"></span><br><br>
+
+            <button onclick="carImagem()">Vai abrir um carro</button><br>
+
+            <span id="carrinho"></span><br>
+
+    <!-- ex5 -->
+
+            <button id="alerta">Alerta</button><br><br>
+
+
+    <!-- ex6 -->
+
+            <button id="somar">10 + 5</button><br>
+
+
+                                        <!-- EVENTO ONLOAD -->
+
+    <!-- O evento onload ocorre quando um objeto é carregado.onload é usado com mais frequência dentro
+    do elemento <body> para executar um script depois que uma página da Web carregou completamente
+    todo o conteúdo (incluindo imagens, arquivos de script, arquivos CSS, etc.). -->
+
+    <!-- Sintaxe -->
+
+        <!-- Em HTML:
+        <element onload="myScript"> -->
+
+        <!-- Em JavaScript:
+        object.onload = function(){myScript}; -->
+
+        <!-- Em JavaScript, usando o método addEventListener():
+        object.addEventListener("mouseover", myScript); -->
+
+
+    <!-- ex7 -->
+
+        <!-- Onload colocado no BODY -->
+
+                                        <!-- EVENTO ONMOUSEOVER E ONMOUSEOUT  -->
+        
+    <!-- O onmouseoverevento ocorre quando o ponteiro do mouse entra em um elemento .O onmouseoverevento
+    geralmente é usado junto com o onmouseoutevento, que ocorre quando o ponteiro do mouse sai do elemento.
+    O onmouseoverevento é semelhante ao evento. A diferença é que o evento não borbulha (não se propaga na
+    hierarquia do documento). Consulte "Mais exemplos" na parte inferior desta página para entender melhor
+    as diferenças. onmouseenteronmouseenter -->
+
+    <!-- ex8 -->
+
+
+        <h1 >Esse é o mouseOver e mouseOut</h1>
+
+        <p onmouseover="style.color='red'"; onmouseout="style.color='blue'">quando o cursor do mouse passar por esse páragrafo a cor dele vai mudar do preto 
+        para o azul e depois que tirarmos o cursor a cor vai ficar vermelho</p>
+
+
+
+
+
+            
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto - Método</title>
+</head>
+<body>
+
+    <script>
+
+        // QUANDO UM OBJETO TEM UMA VARIAVEL A GENTE CHAMA DE PROPRIEDADE.
+        // QUANDO UM OBJETO TEM UMA FUNÇÃO A GENTE CHAMA DE MÉTODO.
+
+        // ex1
+
+                // var aluno = {nome: "Igor",
+                //             notas: [6.0 , 8.0],
+                //             media: function (nota1, nota2){
+                //                 return (nota1 + nota2) / 2;
+                //             }      
+                // };
+
+                // console.log(aluno.nome);
+                // console.log(aluno.media(aluno.notas[0], aluno.notas[1]));
+
+    
+
+
+
+    //////////////////////////////////////////////////////////////////////////////////////
+
+                    // var aluno2 = {nome: "João",
+                    //             notas: [9.0 , 2.0],
+                    //             media: function (n1, n2){
+                    //                 return (n1 + n2) / 2;
+                    //             }
+                    // };
+
+                    // console.log(aluno2.nome);
+                    // console.log(aluno2.media(aluno2.notas[0], aluno2.notas[1]));
+
+
+        // ex2
+
+                // function calcMedia (n1, n2){
+                //                 return (n1 * 2  + n2) / 2;
+                //             }
+
+                // var aluno = {nome: "Igor",
+                //             notas: [4.0 , 8.0],
+                //             media: calcMedia
+                // };
+
+                // var aluno2 = {nome: "Paulo",
+                //             notas: [9.0 , 2.0],
+                //             media: calcMedia
+                // };
+
+                // console.log(aluno.nome);
+                // console.log(aluno.media(aluno.notas[0], aluno.notas[1]));
+
+                // console.log(aluno2.nome);
+                // console.log(aluno2.media(aluno2.notas[0], aluno2.notas[1]));
+                // console.warn("quebra de linha")
+
+
+        // ex3
+                    
+              //   function calcMedia(){
+              //       return(this.notas[0] + this.notas[1]) / 2 ;
+              //   }
+
+              //   var aluno1 = {
+              //       nome: "erick",
+              //       notas: [9,5],
+              //       media : calcMedia
+              //   }
+
+              //   var aluno2 = {
+              //       nome : "João",
+              //       notas : [3, 4],
+              //       media : calcMedia
+              //   }
+
+              //  console.log(aluno1.nome);
+              //  console.log(aluno1.media());
+
+              //  console.log(aluno2.nome);
+              //  console.log(aluno2.media());
+
+            ///////////////////////////////////
+
+
+          // function ultimo(){
+          //   return (this.nota[0] - this.nota[1]) / 2;
+          // }
+
+          // let varia = {
+          //   nome : "erick",
+          //   nota : [12,12],
+          //   media : ultimo,
+          // }
+
+          // console.log(varia.nome)
+          // console.log(varia.ultimo())
+            
+            </script>
+    
+</body>
+</html>
+
